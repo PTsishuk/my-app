@@ -7,6 +7,11 @@ pipeline {
                 echo 'my pipeline execution: building the application in dev environment...'
             }
         }
+        stage('post') {
+            steps {
+                echo 'my pipeline execution: posting the application...'
+            }
+        }
 //     stages {
 //         stage('build') {
 //             steps {
